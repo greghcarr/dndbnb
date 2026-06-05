@@ -1,0 +1,11 @@
+node_modules
+dist/
+release/
+.DS_Store
+*.log
+.env*
+# Templates checked in deliberately so contributors know which env
+# vars to set.
+!.env*.example
+*.tsbuildinfo
+.claude/
