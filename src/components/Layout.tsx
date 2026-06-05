@@ -1,6 +1,7 @@
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import { supabase } from '@/lib/supabase';
 import { useSession } from '@/lib/session';
+import { VERSION_INDICATOR } from '@/lib/version';
 import {
   CompassFilledIcon,
   CompassIcon,
@@ -85,6 +86,11 @@ export const Layout = (): JSX.Element => {
       <main className="site-main">
         <Outlet />
       </main>
+      <footer className="site-footer">
+        <span className="version-indicator" title="App version / engine version (engine commit)">
+          {VERSION_INDICATOR}
+        </span>
+      </footer>
     </>
   );
 };

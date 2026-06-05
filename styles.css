@@ -2017,3 +2017,18 @@ a.icon-btn {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.site-footer {
+  padding: 1rem 2rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.version-indicator {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  user-select: text;
+}
